@@ -1,0 +1,17 @@
+import { Outlet } from "react-router"
+
+const Adminlayout = () => {
+  return (
+    <div className="admin-layout">MobileSidebar
+    <aside className="w-full max-[270px] hidden lg:block">
+        Sidebar
+    </aside>
+    <aside
+    className="children">
+        <Outlet/>
+    </aside>
+     </div>
+  )
+}
+
+export default Adminlayout
